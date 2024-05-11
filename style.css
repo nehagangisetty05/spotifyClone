@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 2rem;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+
+.container .left{
+    width: 25vw;
+    padding: 5px;
+    padding-top: 5px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+
+.container .left > *{
+    width: 90%;
+    /* border: 2px solid palegoldenrod; */
+    margin-bottom: 10px;
+    border-radius: 0.5rem;
+    padding: 10px;
+    background-color: #121212;
+}
+
+.left .home .homeContent,
+.left .home .spotify{
+    color: white;
+    margin-bottom: 20px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.left .home .spotify i{
+    font-size: 1.3vw;
+}
+
+.left .home .spotify h1{
+    font-size: 1rem;
+}
+
+.left .home .homeContent{
+    gap: 15px;
+}
+
+.left .home .homeContent i {
+    font-size: 1.3rem;
+}
+
+.left .home .homeContent h2{
+    font-size: 1rem;
+}
+
+/* ---- */
+
+.left .library .libHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left .library .libHeading .libhead{
+    display: flex;
+    gap: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .library .libHeading .libhead img{
+    filter: invert(1);
+    width: 1.5rem;
+}
+
+.left .library .libHeading .libhead h2{
+    font-size: 1rem;
+}
+
+.left .library .libHeading i{
+    font-size: 1rem;
+    color: white;
+}
+
+.left .library .scrollLibContent{
+    width: 100%;
+    height: 40vh;
+    /* border: 2px solid paleturquoise; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.left .library .scrollLibContent:hover{
+    overflow-y: scroll;
+}
+
+.left .library .scrollLibContent::-webkit-scrollbar {
+    width: 5px; 
+    background-color: black; 
+}
+
+.left .library .scrollLibContent::-webkit-scrollbar-thumb {
+    background-color: #716d6d; 
+    border-radius: 5px; 
+}
+
+.left .library .scrollLibContent::-webkit-scrollbar-track {
+    background-color: #1f1f1f;
+}
+
+.left .library .scrollLibContent > *{
+    margin-bottom: 20px;
+}
+
+.left .library .scrollLibContent .createPlaylist{
+    width: 90%;
+    /* border: 2px solid pink; */
+    padding: 10px;
+    border-radius: 1vw;
+    background-color: #242424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left .library .scrollLibContent .createPlaylist > *{
+    /* margin-bottom: 10px; */
+    color: white;
+}
+
+.left .library .scrollLibContent .createPlaylist div i{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* .left .library .scrollLibContent .createPlaylist h5 p{
+    background-color: pink;
+    padding-right: 80px;
+} */
+
+.left .library .scrollLibContent .createPlaylist h5{
+    /* background-color: pink; */
+    width: 70%;
+}
+
+.left .library .scrollLibContent .createPlaylist h5 #artist{
+    font-size: 0.7rem;
+    margin-top: 5px;
+    color: gray;
+}
+
+/* .left .library .scrollLibContent .createPlaylist h4{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.left .library .scrollLibContent .createPlaylist p{
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 30px;
+} */
+
+
+
+.left .library .footer{
+    /* border: 2px solid greenyellow; */
+    position: absolute;
+    width: 90%;
+    bottom: 30px;
+    display:  flex;
+    flex-direction: column;
+}
+
+.left .library .footer .links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    row-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.left .library .footer a,
+.left .library .footer .links a{
+    text-decoration: none;
+    color: #a7a7a7;
+    font-size: 12px;
+}
+
+.left .library .footer a{
+    margin-top: 10px;
+}
+
+.left .library .footer button {
+    margin-top: 20px;
+    width: 30%;
+    padding: 10px 5px;
+    border-radius: 2rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.left .library .footer button i{
+    color: white;
+}
+
+/* right block */
+
+.container .right{
+    width: 75vw;
+    height: 98vh;
+    padding: 2px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.container .right:hover{
+    overflow-y: scroll;
+}
+
+.container .right::-webkit-scrollbar{
+    width: 5px;
+    background-color: black;
+}
+
+.container .right::-webkit-scrollbar-thumb{
+    background-color: #716d6d;
+    border-radius: 5px;
+}
+
+.container .right::-webkit-scrollbar-track{
+    background-color: #1f1f1f;
+}
+
+.right .nav{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    background-color: #121212;
+    border-radius: 0.5rem;
+    margin-top: 2px;
+}
+
+.right .nav .navigate{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .nav .navigate i{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.right .nav .login button{
+    padding: 10px;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+}
+
+.right .nav .login button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* play songs section */
+
+.right .playSong{
+    width: 72.5%;
+    background-color: #121212;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    border-top: 0.2px solid gray;
+}
+
+.right .playSong .playContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right .playSong .playContainer > *{
+    color: white;
+}
+
+.right .playSong .playContainer .songTitle{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right .playSong .playContainer .songTitle .playTitle > * {
+    margin-bottom: 3px;
+}
+
+.right .playSong .playContainer .songTitle .playTitle p{
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.right .playSong .playContainer .controls{
+    display: flex;
+    gap: 40px;
+}
+
+.right .playSong .playContainer .controls button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.right .playSong .playContainer .controls button i{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.right .playSong .playContainer .vol{
+    position: relative;
+    width: 100px;
+    height: 2px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; */
+    margin-left: 50px;
+    background-color: white;
+}
+
+.right .playSong .playContainer .vol i{
+   position: absolute;
+   color: #fff;
+   font-size: 1.3rem;
+   top: -8px;
+   left: -40px;
+}
+
+.right .playSong .playContainer .vol input{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 3s linear;
+    opacity: 0;
+}
+
+.right .playSong .playContainer .vol .volBar{
+    position: absolute;
+    background: aqua;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    transition: .5s linear;
+}
+
+.right .playSong .playContainer .vol .dot{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: aqua;
+    border-radius: 50%;
+    left: 0%;
+    top: -1px;
+    transition: 1s linear;
+}
+
+.right .playSong .playContainer .vol .dot::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid aqua;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    box-shadow: inset 0 0 3px aqua;
+}
+
+
+.right .playSong .playLine{
+    /* background-color: palevioletred; */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* .right .playSong .playLine .songLine{
+    width: 100%;
+    height: 8px;
+    background-color: white;
+} */
+
+.right .playSong .playLine{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right .playSong .playLine span{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.right .playSong .playLine .bar{
+    position: relative;
+    width: 43%;
+    height: 2px;
+    /* background-color: rgb(105, 105, 170,.1); */
+    background-color: white;
+    margin: 0 15px 0 10px;
+}
+
+.right .playSong .playLine .bar .bar2{
+    position: absolute;
+    background: aqua;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    transition: 0.5s linear;
+}
+
+.right .playSong .playLine .bar .dot{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: aqua;
+    border-radius: 50%;
+    left: 0%;
+    top: -1px;
+    transition: 1s linear;
+}
+
+.right .playSong .playLine .bar .dot::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid aqua;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    box-shadow: inset 0 0 3px aqua;
+}
+
+.right .playSong .playLine .bar input{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -6px;
+    cursor: pointer;
+    z-index: 999999;
+    transition: 3s linear;
+    opacity: 0;
+}
+
+
+/* scrolling section */
+.right .scrollSongs{
+    width: 99.5%;
+    background-image: linear-gradient(#242424, #121212);
+}
+
+.right .scrollSongs .rightsmallContainer{
+    width: 100%;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+.right .scrollSongs .rightsmallContainer h1{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.right .scrollSongs .rightsmallContainer .lists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right .scrollSongs .rightsmallContainer .lists .boxs,
+.right .scrollSongs .rightsmallContainer .lists .box{
+    width: 10vw;
+    /* border: 2px solid purple; */
+    padding: 10px;
+    position: relative;
+}
+
+.right .scrollSongs .rightsmallContainer .lists .boxs > *,
+.right .scrollSongs .rightsmallContainer .lists .box > *{
+    margin-bottom: 5px;
+}
+
+.right .scrollSongs .rightsmallContainer .lists .boxs img,
+.right .scrollSongs .rightsmallContainer .lists .box img{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+}
+
+.right .scrollSongs .rightsmallContainer .lists .boxs #name,
+.right .scrollSongs .rightsmallContainer .lists .box #name{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.right .scrollSongs .rightsmallContainer .lists .boxs #para,
+.right .scrollSongs .rightsmallContainer .lists .box #para{
+    font-size: 0.8rem;
+    color: #716d6d;
+}
+
+.right .scrollSongs .rightsmallContainer .lists .boxs .playbtn{
+    display: none;
+}
+
+.right .scrollSongs .rightsmallContainer .lists .boxs:hover .playbtn{
+    color: black;
+    background-color: greenyellow;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    animation: playbtn 1s ease both;
+}
+
+@keyframes playbtn {
+    from {
+        bottom: 50px;
+    }
+    to{
+        bottom: 65px;
+    }
+}
+
+.right .scrollSongs .rightsmallContainer .lists .boxs img{
+    border-radius: 1vw;
+}
+
+.right .scrollSongs .rightFooter{
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right .scrollSongs .rightFooter .footerbox{
+    /* border: 2px solid sandybrown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px;
+}
+
+.right .scrollSongs .rightFooter .footerbox h1{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.right .scrollSongs .rightFooter .footerbox ul > * {
+    margin-bottom: 15px;
+}
+
+.right .scrollSongs .rightFooter .footerbox ul li{
+    color: #a7a7a7;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.right .scrollSongs .rightFooter .footerbox .icons{
+    display: flex;
+    color: white;
+    gap: 15px;
+}
+
+.right .scrollSongs .rightFooter .footerbox .icons i{
+    background-color: #716d6d;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.right .scrollSongs .line{
+    width: 99%;
+    height: 1px;
+    margin-top: 30px;
+    margin-left: 5px;
+    background-color: #716d6d;
+}
+
+.right .scrollSongs .copyright{
+    color: #716d6d;
+    padding: 80px;
+    margin-bottom: 60px;
+}

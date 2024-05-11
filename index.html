@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+
+            <div class="home">
+                <div class="spotify"><i class="fa-brands fa-spotify"></i><h1>Spotify</h1></div>
+                <div class="homeSearch">
+                    <div class="homeContent"><i class="fa-solid fa-house"></i><h2>Home</h2></div>
+                    <div class="homeContent"><i class="fa-solid fa-magnifying-glass"></i><h2>Search</h2></div>
+                </div>
+            </div>
+
+            <div class="library">
+                <div class="libHeading">
+                    <div class="libhead">
+                        <img src="./asset/svg/library.svg" alt="">
+                        <h2>Your Library</h2>
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="scrollLibContent">
+
+                    <div class="createPlaylist">
+                        <div><i class="fa-solid fa-music"></i></div>
+                        <h5>
+                            <p id="name">title</p>
+                            <p id="artist">artist</p>
+                        </h5>
+                        <div><i class="fa-solid fa-circle-play playbutton" id="1"></i></div>
+                    </div>
+
+                    <div class="createPlaylist">
+                        <div><i class="fa-solid fa-music"></i></div>
+                        <h5>
+                            <p id="name">title</p>
+                            <p id="artist">artist</p>
+                        </h5>
+                        <div><i class="fa-solid fa-circle-play playbutton" id="2"></i></div>
+                    </div>
+
+                    <div class="createPlaylist">
+                        <div><i class="fa-solid fa-music"></i></div>
+                        <h5>
+                            <p id="name">title</p>
+                            <p id="artist">artist</p>
+                        </h5>
+                        <div><i class="fa-solid fa-circle-play playbutton" id="3"></i></div>
+                    </div>
+
+                    <div class="createPlaylist">
+                        <div><i class="fa-solid fa-music"></i></div>
+                        <h5>
+                            <p id="name">title</p>
+                            <p id="artist">artist</p>
+                        </h5>
+                        <div><i class="fa-solid fa-circle-play playbutton" id="4"></i></div>
+                    </div>
+
+                    <div class="createPlaylist">
+                        <div><i class="fa-solid fa-music"></i></div>
+                        <h5>
+                            <p id="name">title</p>
+                            <p id="artist">artist</p>
+                        </h5>
+                        <div><i class="fa-solid fa-circle-play playbutton" id="5"></i></div>
+                    </div>
+
+                    <div class="createPlaylist">
+                        <div><i class="fa-solid fa-music"></i></div>
+                        <h5>
+                            <p id="name">title</p>
+                            <p id="artist">artist</p>
+                        </h5>
+                        <div><i class="fa-solid fa-circle- playbutton" id="6"></i></div>
+                    </div>
+
+                    <div class="createPlaylist">
+                        <div><i class="fa-solid fa-music"></i></div>
+                        <h5>
+                            <p id="name">title</p>
+                            <p id="artist">artist</p>
+                        </h5>
+                        <div><i class="fa-solid fa-circle-play playbutton" id="7"></i></div>
+                    </div>
+
+                    <div class="createPlaylist">
+                        <div><i class="fa-solid fa-music"></i></div>
+                        <h5>
+                            <p id="name">title</p>
+                            <p id="artist">artist</p>
+                        </h5>
+                        <div><i class="fa-solid fa-circle-play playbutton" id="8"></i></div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="links">
+                        <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy Center</span></a>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                        <a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+                    </div>
+                    <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener"><span>Cookies</span></a>
+                    <button><i class="fa-solid fa-globe"></i> &nbsp English</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="nav">
+                <div class="navigate">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="login">
+                    <button>Sign in</button>
+                    <button>Log in</button>
+                </div>
+            </div>
+
+            <div class="playSong">
+                <div class="playContainer">
+                    <div class="songTitle">
+                        <div class="playSymbol"><i class="fa-solid fa-music"></i></div>
+                        <div class="playTitle">
+                            <h5 id="titletrack"></h5>
+                            <p id="subtitle"></p>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button><i class="fa-solid fa-backward-fast" id="back"></i></button>
+                        <button><i class="fa-sharp fa-solid fa-play" id="masterPlay"></i></button>
+                        <button><i class="fa-solid fa-forward-fast" id="next"></i></button>
+                    </div>
+                    <div class="vol">
+                        <i class="fa-solid fa-volume-low" id="vol_icon"></i>
+                        <input type="range" id="vol" min="0" value="30" max="100">
+                        <div class="volBar"></div>
+                        <div class="dot" id="volDot"></div>
+                    </div>
+                </div>
+                <div class="playLine">
+                    <span class="currentStart">0:00</span>
+                    <div class="bar">
+                        <input type="range" id="seek" min="0" value="0" max="100">
+                        <div class="bar2" id="bar2"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <span class="currentEnd">0:00</span>
+                </div>
+            </div>
+            
+            <div class="scrollSongs">
+
+                <div class="rightsmallContainer">
+                    <h1>Popular Artists</h1>
+                    <div class="lists">
+                        <div class="box">
+                            <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="">
+                            <p id="name">Pritam</p>
+                            <p id="para">Artist</p>
+                        </div>
+                        <div class="box">
+                            <img src="https://i.scdn.co/image/ab676161000051740261696c5df3be99da6ed3f3" alt="">
+                            <p id="name">Arijit Singh</p>
+                            <p id="para">Artist</p>
+                        </div>
+                        <div class="box">
+                            <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="">
+                            <p id="name">A.R. Rehman</p>
+                            <p id="para">Artist</p>
+                        </div>
+                        <div class="box">
+                            <img src="https://i.scdn.co/image/ab67616100005174fb13d10be20fdcb5a670f551" alt="">
+                            <p id="name">Vishal Mishra</p>
+                            <p id="para">Artist</p>
+                        </div>
+                        <div class="box">
+                            <img src="https://i.scdn.co/image/ab67616100005174fc7c542c04b5f7dc8f1b1c16" alt="">
+                            <p id="name">Anirudh Ravichandra</p>
+                            <p id="para">Artist</p>
+                        </div>
+                        <div class="box">
+                            <img src="data:image/jpeg;base64,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" alt="">
+                            <p id="name">Vishal-Shekhar</p>
+                            <p id="para">Artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightsmallContainer">
+                    <h1>Popular Songs</h1>
+                    <div class="lists">
+                        <div class="boxs">
+                            <button class="playbtn"><i class="fa-solid fa-play"></i></button>
+                            <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="">
+                            <p id="name">Animal</p>
+                            <p id="para">Manan Bhardhwaj, Vishal Mishra, Jaani</p>
+                        </div>
+                        <div class="boxs">
+                            <button class="playbtn"><i class="fa-solid fa-play"></i></button>
+                            <img src="https://i.scdn.co/image/ab67616d00001e029bb2d30b01ac2cada8a8ad03" alt="">
+                            <p id="name">Ek Tha Raja</p>
+                            <p id="para">Badsha</p>
+                        </div>
+                        <div class="boxs">
+                            <button class="playbtn"><i class="fa-solid fa-play"></i></button>
+                            <img src="https://i.scdn.co/image/ab67616d00001e021a8c4618eda885a406958dd0" alt="">
+                            <p id="name">Still Rollin</p>
+                            <p id="para">Shubh</p>
+                        </div>
+                        <div class="boxs">
+                            <button class="playbtn"><i class="fa-solid fa-play"></i></button>
+                            <img src="https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae" alt="">
+                            <p id="name">Moosetape</p>
+                            <p id="para">Sidhu Moose Wala</p>
+                        </div>
+                        <div class="boxs">
+                            <button class="playbtn"><i class="fa-solid fa-play"></i></button>
+                            <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="">
+                            <p id="name">Aashiqui 2</p>
+                            <p id="para">Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                        </div>
+                        <div class="boxs">
+                            <button class="playbtn"><i class="fa-solid fa-play"></i></button>
+                            <img src="data:image/jpeg;base64,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" alt="">
+                            <p id="name">Ghost</p>
+                            <p id="para">Diljit Dosanjh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightsmallContainer">
+                    <h1>Popular Albums</h1>
+                    <div class="lists">
+                        <div class="boxs">
+                            <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4YRxDV8wJFPHPTeXepOstw/en-GB" alt="">
+                            <p id="name">Arijit Singh Radio</p>
+                            <p id="para">With Neha Kakkar, Pritam, KK and more</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/2FKWNmZWDBZR4dE5KX4plR/en-GB" alt="">
+                            <p id="name">Diljit Dosanjh Radio</p>
+                            <p id="para">With Garry Sandhu, Ranjit Bawa, Amrinder...</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4K6blSRoklNdpw4mzLxwfn/en-GB" alt="">
+                            <p id="name">Kumar Sanu Radio</p>
+                            <p id="para">With Udit Narayan, AlkaYagnik, Anuradha...</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/0oOet2f43PA68X5RxKobEy/en-GB" alt="">
+                            <p id="name">Shreya Ghoshal...</p>
+                            <p id="para">With Sonu Nigam, Sunidhi Chauhan,...</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4fEkbug6kZzzJ8eYX6Kbbp/en-GB" alt="">
+                            <p id="name">KK Radio</p>
+                            <p id="para">With Mohit Chauhan, Ankit Tiwari, Javad Ali...</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4YRxDV8wJFPHPTeXepOstw/en-GB" alt="">
+                            <p id="name">Rahat Fateh Ali Khan ...</p>
+                            <p id="para">With Nustat Fateh Ali Khan, Kailash Kher,...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightsmallContainer">
+                    <h1>Popular Charts</h1>
+                    <div class="lists">
+                        <div class="boxs">
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt="">
+                            <p id="name">Top Songs - Global</p>
+                            <p id="para">Your weekly update of the most played tracks right now - Global.</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg" alt="">
+                            <p id="name">Top Songs - USA</p>
+                            <p id="para">Your weekly update of the most played tracks right now - Global.</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" alt="">
+                            <p id="name">Top 50 - Global</p>
+                            <p id="para">Your daily update of the most played tracks right now - Global.</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg" alt="">
+                            <p id="name">Top 50 - USA</p>
+                            <p id="para">Your daily update of the most played tracks right now - Global.</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" alt="">
+                            <p id="name">Viral 50 - Global</p>
+                            <p id="para">Your daily update of the most played tracks right now - Global.</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" alt="">
+                            <p id="name">Viral 50 - USA</p>
+                            <p id="para">Your daily update of the most played tracks right now - Global.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightsmallContainer">
+                    <h1>Spotify Playlists</h1>
+                    <div class="lists">
+                        <div class="boxs">
+                            <img src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
+                            <p id="name">Dinner with Friends</p>
+                            <p id="para">The perfect soundtrack to those long nights over dinner</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://i.scdn.co/image/ab67706f00000002a98e80d2fc9b1cf3b80c4481" alt="">
+                            <p id="name">Dinner Jazz</p>
+                            <p id="para">The gentle sound of some of the greatest voices</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://i.scdn.co/image/ab67706f000000027cd703bbfec2f1e86c879bec" alt="">
+                            <p id="name">Dinner Lounge</p>
+                            <p id="para">Soft electronic music for your dinner</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://i.scdn.co/image/ab67706f000000022ba865eb4204be02ce3e8e09" alt="">
+                            <p id="name">Feel Good Dinner</p>
+                            <p id="para">An uplifting yet tasteful dinner playlist</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://i.scdn.co/image/ab67706f00000002dd9acb211caf8703ea9bfc98" alt="">
+                            <p id="name">Bossa Nova Dinner</p>
+                            <p id="para">Soundtrack your cozy dinner with bossa nov</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://i.scdn.co/image/ab67706f000000027cd703bbfec2f1e86c879bec" alt="">
+                            <p id="name">Kitchen Swagger</p>
+                            <p id="para">Gettin'figgy with it, bana-na-na-nanana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightsmallContainer">
+                    <h1>Spotify Original Podcasts</h1>
+                    <div class="lists">
+                        <div class="boxs">
+                            <img src="https://i.scdn.co/image/ab67656300005f1f9114d741247e2d26a7b48b6f" alt="">
+                            <p id="name">Shri Krishna Leela</p>
+                            <p id="para">Spotify Studios</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://i.scdn.co/image/ab67656300005f1f58e730e8341e29ca0f0671fe" alt="">
+                            <p id="name">Pretkotha (Bengali Horror Podcast)</p>
+                            <p id="para">Gourab Tapadar</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://i.scdn.co/image/ab67656300005f1f3c0cd1efd66f78f05f13632a" alt="">
+                            <p id="name">True Story Bro! with Triggered Insaan</p>
+                            <p id="para">Spotify</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://i.scdn.co/image/ab67656300005f1f20741e027668636723359069" alt="">
+                            <p id="name">The Joe Rogan Experience</p>
+                            <p id="para">Joe Rogan</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://i.scdn.co/image/ab67656300005f1fa640450d0f9e4367ccf0fa8a" alt="">
+                            <p id="name">Gopi Sudhakar</p>
+                            <p id="para">Spotify Studios</p>
+                        </div>
+                        <div class="boxs">
+                            <img src="https://i.scdn.co/image/ab67656300005f1f20741e027668636723359069" alt="">
+                            <p id="name">LAFZON KE MOTI-...</p>
+                            <p id="para">RJ VASHISHTH</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightFooter">
+                    <div class="footerbox">
+                        <h1>Company</h1>
+                        <ul>
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                        </ul>
+                    </div>
+
+                    <div class="footerbox">
+                        <h1>Communities</h1>
+                        <ul>
+                            <li>For Artists</li>
+                            <li>Developers</li>
+                            <li>Advertising</li>
+                            <li>Investors</li>
+                            <li>Vendors</li>
+                        </ul>
+                    </div>
+
+                    <div class="footerbox">
+                        <h1>Useful links</h1>
+                        <ul>
+                            <li>Support</li>
+                            <li>Free Mobile App</li>
+                        </ul>
+                    </div>
+
+                    <div class="footerbox">
+                        <h1>Spotify Plans</h1>
+                        <ul>
+                            <li>Premium Individual</li>
+                            <li>Premium Duo</li>
+                            <li>Premium Family</li>
+                            <li>Premium Student</li>
+                            <li>Spotify Free</li>
+                        </ul>
+                    </div>
+
+                    <div class="footerbox">
+                        
+                    </div>
+
+                    <div class="footerbox">
+                        <div class="icons">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="copyright">&#169 2024 Spotify AB</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
